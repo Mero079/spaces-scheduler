@@ -1,5 +1,13 @@
 # 🤗 Spaces Scheduler
 
+<a href="https://www.star-history.com/#kghamilton89/spaces-scheduler&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kghamilton89/spaces-scheduler&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kghamilton89/spaces-scheduler&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kghamilton89/spaces-scheduler&type=date&legend=top-left" />
+ </picture>
+</a>
+
 [Hugging Face Spaces](https://huggingface.co/spaces) offer a simple way to host ML apps directly on the Hugging Face platform.
 
 The [MPEP initiative](https://github.com/huggingface/data-is-better-together/tree/main/community-efforts/prompt_translation), a part of the [DIBT project](https://huggingface.co/DIBT), identifed a use case wherein it would be desireable to have performance dashboards hosted in Spaces refresh on a schedule.
