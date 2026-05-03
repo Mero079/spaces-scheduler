@@ -1,6 +1,7 @@
 name: Restart Hugging Face Space
 
 on:
+  workflow_dispatch:   # allows manual run
   schedule:
     - cron: '*/20 * * * *'
 
