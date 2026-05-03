@@ -1,0 +1,20 @@
+name: Cache Warmer for n8n Worker
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 minutes
+  workflow_dispatch:
+
+jobs:
+  warm-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request main page
+        run: curl -sS -o /dev/null https://n8n.theamrahmed.workers.dev/signin
+      - name: Request key static files (add more as needed)
+        run: |
+          curl -sS -o /dev/null https://n8n.theamrahmed.workers.dev/js/app.js
+          curl -sS -o /dev/null https://n8n.theamrahmed.workers.dev/js/chunk-vendors.js
+          curl -sS -o /dev/null https://n8n.theamrahmed.workers.dev/css/app.css
+      - name: Request health endpoint
+        run: curl -sS -o /dev/null https://n8n.theamrahmed.workers.dev/healthz
